@@ -1,0 +1,8 @@
+- React is mainly used to create single page applications.
+
+What is Virtual DOM ?
+- Virtual DOM is a virtual representation of a UI which is kept in a memory later synced with Real DOM with the help of a library called "ReactDOM".
+
+- The updation of real dom with virtual DOM.
+
+- the entire process of updating the realDOM with the help of VDOM is called as "Reconcialtion
