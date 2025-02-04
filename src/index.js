@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 // function App() {
 //    let ele = React.createElement(
@@ -44,7 +44,19 @@ import React from "react";
 
 // OR
 
-const App = () => {
-  return <h1>Functional based Component</h1>;
-};
-export default App;
+// const App = () => {
+//   return <h1>Functional based Component</h1>;
+// };
+// export default App;
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './global.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
