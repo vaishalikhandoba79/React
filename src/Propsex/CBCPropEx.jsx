@@ -11,12 +11,11 @@ export default class CBCPropEx extends Component {
         {
           this.props.hobbies.map(hobby=>{
             return <li>{hobby}</li>
-            })
+          })
         }
-        <h1>{this.props.address.city}</h1>
-        <button onClick={this.props.sendFun}>Click</button>
+        <h1>{this.props.address.city}</h1> 
+        <button onClick={this.props.sendFun}>Click</button> 
       </div>
     )
   }
 }
-

@@ -1,8 +1,15 @@
 import React from 'react'
 
-const PropChildEx = () => {
+const PropChildEx = (props) => {
+    console.log(props);
   return (
-    <div>PropChildEx</div>
+    <div>PropChildEx
+
+        <h1>{props.num}</h1>
+        {
+            props.children
+        }
+    </div>
   )
 }
 
