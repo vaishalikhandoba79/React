@@ -140,13 +140,27 @@
 
 // export default App
 
+// import React from 'react'
+// import FBCStateEx from './stateexample/FBCStateEx'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <FBCStateEx/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import FBCStateEx from './stateexample/FBCStateEx'
+import FunctionalComponent from './components/FunctionalComponent'
 
 const App = () => {
   return (
     <div>
-      <FBCStateEx/>
+      <FunctionalComponent/>
     </div>
   )
 }
