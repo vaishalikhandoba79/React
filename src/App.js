@@ -334,21 +334,37 @@
 //1.External Stylesheet
 //2.Inline CSS
 //3.Module CSS
-import React from 'react'
-import "./App.css"
+// import React from 'react'
+// import "./App.css"
 //import styles from './myStyle.module.css'
 // import { FunctionalComponent } from './components/FunctionalComponent'
-import "./global.css"
-import ClassComponent from './components/ClassComponent'
-const App = () => {
-  return (
-    <div>
-    {/*<FunctionalComponent clg="MRU" msg="Good Afternoon" apply={true}/>
-    <ClassComponent/>*/}
-    <ClassComponent/>
+// import "./global.css"
+// import ClassComponent from './components/ClassComponent'
+// const App = () => {
+//   return (
+//     <div>
+//     {/*<FunctionalComponent clg="MRU" msg="Good Afternoon" apply={true}/>
+//     <ClassComponent/>*/}
+//     <ClassComponent/>
 
-    </div>
-  )
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import logo from './logo.svg'
+import './App.css';
+import MyForm from './components/MyForm';
+
+
+
+function App() {
+  return (
+    <div className="App">
+     <MyForm></MyForm>
+     </div>
+  );
 }
 
-export default App
+export default App;
