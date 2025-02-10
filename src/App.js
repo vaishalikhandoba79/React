@@ -354,17 +354,31 @@
 // export default App
 
 // import logo from './logo.svg'
-import './App.css';
-import MyForm from './components/MyForm';
+// import './App.css';
+// import MyForm from './components/MyForm';
 
 
 
-function App() {
+// function App() {
+//   return (
+//     <div className="App">
+//      <MyForm></MyForm>
+//      </div>
+//   );
+// }
+
+// export default App;
+
+//! hooks examples
+import React from 'react'
+import UseEffectEx from './hookexamples/UseEffectEx'
+
+const App = () => {
   return (
-    <div className="App">
-     <MyForm></MyForm>
-     </div>
-  );
+    <div>
+      <UseEffectEx/>
+    </div>
+  )
 }
 
-export default App;
+export default App
