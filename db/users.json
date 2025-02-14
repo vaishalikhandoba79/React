@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name":"Krishna",
+        "email":"krishna@gmail.com",
+        "phonenumber":"6387643856"
+    },
+
+    {
+        "id":2,
+        "name":"Vaishali",
+        "email":"vaishali@gmail.com",
+        "phonenumber":"6548936547"
+    },
+
+    {
+        "id":3,
+        "name":"Madhu",
+        "email":"madhu@gmail.com",
+        "phonenumber":"7583469576"
+    }
+]
