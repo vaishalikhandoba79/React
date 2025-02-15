@@ -2,7 +2,7 @@
 // import Navbar from './components/Navbar';
 // import {BrowserRouter  , Routes , Route} from "react-router-dom";
 // import Dashboard from './pages/Dashboard';
-// import Classroom from './pages/Classroom';
+// import Clasroom from './pages/Clasroom';
 // import Assessments from './pages/Assessments';
 // import Store from './pages/Store';
 // import Calender from './pages/Calender';
@@ -18,16 +18,17 @@
 //         <Navbar/>
 //         <Routes>
 //             <Route path='/' element={<Dashboard/>}/>
-//             <Route path='/classroom' element={<Classroom/>}/>
+//             <Route path='/classroom' element={<Clasroom/>}/>
 //             <Route path='/assessment' element={<Assessments/>}/>
 //             <Route path='/store' element={<Store/>}/>
 //             <Route path='/calender' element={<Calender/>}/>
 //             <Route path='/news' element={<News/>}/>
 //             <Route path='/blog' element={<Blog/>}/>
-//             <Route path='/profile' element={<Profile/>}/>
+//             <Route path='/profile' element={<Profile/>}>
 //                     <Route path='/profile/myaccount' element={<MyAccount/>}/>
 //                     <Route path='/profile/mysettings' element={<MySettings/>}/>
-//             <Route path='*' element={<PageNotFound/>}/> 
+//             </Route>
+//             <Route path='*' element={<PageNotFound/>}/>
 //         </Routes>
 //     </BrowserRouter>
 //   )
@@ -35,15 +36,24 @@
 
 // export default App
 
-import React from 'react'
-import { BrowserRouter , Routes , Route } from 'react-router-dom';
-import Create from './Crudcomponents/Create';
-import Edit from './Crudcomponents/Edit';
 
+
+import React from 'react'
+import {BrowserRouter , Routes , Route} from "react-router-dom";
+import Home from './crudcomponents/Home.jsx';
+import Create from './crudcomponents/Create.jsx';
+import Edit from './crudcomponents/Edit.jsx';
+import {ToastContainer} from "react-toastify";
 const App = () => {
   return (
-    
-    <div>App</div>
+    <BrowserRouter>
+    <ToastContainer/>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/edit/:userId' element={<Edit/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,9 +1,8 @@
 import React from 'react'
-// import {Link} from 'react-router-dom';
 
 const MySettings = () => {
   return (
-    <div style={{width:"60%",height:"100vh",background:"tomato"}}>MySettings</div>
+    <div style={{width:"50%",height:"50vh",background:"tomato"}}>MySettings</div>
   )
 }
 
