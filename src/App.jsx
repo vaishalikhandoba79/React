@@ -38,23 +38,38 @@
 
 
 
-import React from 'react'
-import {BrowserRouter , Routes , Route} from "react-router-dom";
-import Home from './crudcomponents/Home.jsx';
-import Create from './crudcomponents/Create.jsx';
-import Edit from './crudcomponents/Edit.jsx';
-import {ToastContainer} from "react-toastify";
-const App = () => {
-  return (
-    <BrowserRouter>
-    <ToastContainer/>
-      <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/create' element={<Create/>}/>
-      <Route path='/edit/:userId' element={<Edit/>}/>
-      </Routes>
-    </BrowserRouter>
-  )
-}
+// import React from 'react'
+// import {BrowserRouter , Routes , Route} from "react-router-dom";
+// import Home from './crudcomponents/Home.jsx';
+// import Create from './crudcomponents/Create.jsx';
+// import Edit from './crudcomponents/Edit.jsx';
+// import {ToastContainer} from "react-toastify";
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//     <ToastContainer/>
+//       <Routes>
+//       <Route path='/' element={<Home/>}/>
+//       <Route path='/create' element={<Create/>}/>
+//       <Route path='/edit/:userId' element={<Edit/>}/>
+//       </Routes>
+//     </BrowserRouter>
+//   )
+// }
 
-export default App
+// export default App
+
+
+import React from "react";
+import CakeContainer from "./reduxcomponent/CakeContainer";
+import { Provider } from "react-redux";
+import store from './redux/store';
+
+const App = () => {
+    return(
+        <Provider store={store}>
+            <CakeContainer/>
+        </Provider>
+    )
+}
+export default App;

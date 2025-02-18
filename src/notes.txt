@@ -27,4 +27,14 @@ http , smtp , ftp , tcp ,ip etc.....
 - npm install json-server -g
 
 - axios library  to fetch the data.
-- npm install axioss
+- npm install axios
+
+redux library:-
+***************
+- redux is a library of js used for state management in react, angular, vue js applications
+- redux is more supportive in react because , redux also follows unidirectional data flow.
+- redux needs to be installed in react,
+        - npm install redux.
+- for connecting react and redux we need one more third party library called as "react-redux
+        - npm install react-redux.
+- without action u can't interact with react.
